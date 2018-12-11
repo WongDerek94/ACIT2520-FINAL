@@ -17,6 +17,11 @@ app.use(bodyParser.urlencoded({
     extended: true
 }));
 
+//Register Helpers
+hbs.registerHelper('getCurrentYear', () => {
+  return new Date().getFullYear();
+})
+
 // PATHS
 // Main page
 app.get('/', (request, response) => {
@@ -62,7 +67,9 @@ app.post('/pics', (request, response) => {
         pic1: results['pic1'],
         pic2: results['pic2'],
         pic3: results['pic3'],
-        pic4: results['pic4']
+        pic4: results['pic4'],
+        pic5: results['pic5'],
+        pic6: results['pic6'],
       });
     }).catch((error) => {
       serverError(response, error);

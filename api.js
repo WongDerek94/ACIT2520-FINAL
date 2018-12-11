@@ -50,7 +50,9 @@ var getPicture = (picturetype) => {
         'pic1': `<img class=pictures src=${body.hits[0].largeImageURL}>`,
         'pic2': `<img class=pictures src=${body.hits[1].largeImageURL}>`,
         'pic3': `<img class=pictures src=${body.hits[2].largeImageURL}>`,
-        'pic4': `<img class=pictures src=${body.hits[3].largeImageURL}>`
+        'pic4': `<img class=pictures src=${body.hits[3].largeImageURL}>`,
+        'pic5': `<img class=pictures src=${body.hits[4].largeImageURL}>`,
+        'pic6': `<img class=pictures src=${body.hits[5].largeImageURL}>`
       });
     })
   })

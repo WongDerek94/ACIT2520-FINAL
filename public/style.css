@@ -1,6 +1,6 @@
 body {
-  font-family: 'Lato', sans-serif;
-  background-color:rgb(250,250,250);
+  font-family: 'Roboto', sans-serif;
+  background-color:rgb(255,69,0);
 }
 
 h1 {
@@ -16,7 +16,7 @@ h3 {
 }
 
 a {
-  font-size:2em;
+  font-size:1.6em;
 }
 
 #container {
@@ -27,10 +27,23 @@ a {
   bottom:0px;
   margin:auto;
   width:80%;
-  height:80%;
+  min-height:100%;
+  text-align:center;
 }
 
 .pictures {
-  width:40%;
+  position: relative;
+  display: inline-block;
+  width:30%;
+  height:30%;
   padding:10px;
+}
+
+#footer {
+  position: absolute;
+  display: block;
+  width: 100%;
+  bottom:0px;
+  left:10px;
+  margin:auto;
 }
