@@ -3,8 +3,6 @@ const api = require('./api');
 const express = require('express');
 const request = require('request');
 const hbs = require('hbs');
-const fs = require('fs');
-const _ = require('lodash');
 const bodyParser = require('body-parser');
 var port = process.env.PORT || 8080;
 
